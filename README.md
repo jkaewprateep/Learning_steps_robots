@@ -101,17 +101,34 @@ for i in range( 30 ) :
 monster = [0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3]
 ```
 
+## Files and Dictionary ##
+
+|File Name|Description |
+--- | --- |
+|sample.py|sample codes|
+|Figure_1.png|sample actions|
+|Figure_2.png|learning actions|
+|ladder.gif|action to ladder|
+|README.md|readme file|
 
 ## Result ##
 
+The result from our learning steps series indicated how samples explored the data in the game axes.
+
 #### Sample player actions ####
+
+Possible actions no learning.
 
 ![Sample player actions](https://github.com/jkaewprateep/Learning_steps_robots/blob/main/Figure_1.png?raw=true "Sample player actions")
 
 #### Sample monster actions ####
 
+Possible actions learning.
+
 ![Sample monster actions](https://github.com/jkaewprateep/Learning_steps_robots/blob/main/Figure_2.png?raw=true "Sample monster actions")
 
 #### Find ladder ###
+
+AI find and took action on the target with no rules added to its condition.
 
 ![Find ladder](https://github.com/jkaewprateep/Learning_steps_robots/blob/main/ladder.gif?raw=true "Find ladder")
