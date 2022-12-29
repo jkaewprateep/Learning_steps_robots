@@ -33,6 +33,26 @@ dic_monster = { "right" : MONSTER_01, "left" : MONSTER_02, "right2" : MONSTER_03
                 "still2" : MONSTER_11, "still3" : MONSTER_12 }
 ```
 
+## Controls ##
+
+
+#### Sample series for player actions #5 ####
+
+
+```
+input = [ 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 4, 4, 4, 4, 4, 4, 3, 3, 3, 1, 1, 1, 0, 0 ]
+```
+
+
+#### Sample series for player actions #12 ####
+
+```
+monster = []
+for i in range( 30 ) :
+    monster.append( i % 12 )
+```
+
+
 ## Result ##
 
 #### Sample player actions ####
