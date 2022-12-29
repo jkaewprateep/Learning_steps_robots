@@ -4,6 +4,8 @@ Study series steps for learning multiple axis problems, robots problems as the e
 
 ## For comparison with codes ## 
 
+One axis problem, you do not need to consider actions continue targets from another axis but one action per cross section is possible with AI - Deep_Learning as the Ping-POng games.
+
 #### One axis problem ####
 
 The player tries to move the player's cursor to balance with increasing steps value until it reaches one side of the game's stage ( Mario Games ) by the equation ```step - player_x_position``` and the player jumps with the equation ```player_x_position - player_y_position``` .  It can be applied to Ping-Pong games by limiting the maximum of the step values or ```step % 50``` 
@@ -15,6 +17,19 @@ for i in range( game_step ):
     coeff_01 = step 
     coeff_02 = step - player_x_position
     coeff_03 = player_x_position - player_y_position
+```
+
+### Multiple axis problem ####
+
+```
+input = [ ]	
+for i in range( 30 ) :
+
+	n_steps = abs( steps % ( 5 ) - steps % ( 2 ) )
+
+	series_1 = n_steps
+	input.append( series_1 )
+	steps = steps + 1
 ```
 
 ## Constants ##
