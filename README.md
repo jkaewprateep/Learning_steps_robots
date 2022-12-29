@@ -23,7 +23,7 @@ for i in range( game_step ):
 
 ### Multiple axis problem ####
 
-It required significants for AI to learning additional task from the current task and its continuity, see the output there are possibilities to learn additional tasks by its significant and continue do it with the ratios until robots learn all possible rules. The AI auto-play learns that ladder, fireball, and coins are conditions it which it moves.
+It required significants for AI to learning additional task from the current task and its continuity, see the output there are possibilities to learn additional tasks by its significant and continue do it with the ratios until robots learn all possible rules. The AI auto-play learns that ladder, fireball, and coins are conditions it which it moves. This is number magitudes equation ```gamescores + len( list_ladder ) + len( coinGroup ) + len( fireballGroup )``` and this is number relative position ```player[0][0] - series_1``` .
 
 ``` [0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3] ```
 
@@ -81,6 +81,7 @@ dic_monster = { "right" : MONSTER_01, "left" : MONSTER_02, "right2" : MONSTER_03
 
 #### Sample series for player actions #5 ####
 
+There are possible 5 actions for the player, see the attached picture it is the same way the robots explored conditions, sample values must be dependent on one axis and vary in scope for another axis for time efficient.
 
 ```
 input = [ 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 4, 4, 4, 4, 4, 4, 3, 3, 3, 1, 1, 1, 0, 0 ]
@@ -89,10 +90,15 @@ input = [ 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 4, 4, 4, 4, 4, 4, 3, 3
 
 #### Sample series for player actions #12 ####
 
+
+There are possible 12 actions for the player, see the attached picture it is the same way the robots explored conditions, sample values must be dependent on one axis and vary in scope for another axis for time efficient.
+
 ```
 monster = []
 for i in range( 30 ) :
     monster.append( i % 12 )
+    
+monster = [0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3]
 ```
 
 
