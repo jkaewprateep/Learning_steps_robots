@@ -1,5 +1,21 @@
 # Learning_steps_robots
-Study series steps for learning multiple axis problems
+
+Study series steps for learning multiple axis problems, robots problems as the exploring problems we cannot use only power of calculations that is because it will take a long time or it will create multiple of variables and that is not sufficient costs. One way to solve this problem with fewer efforts of codings is to use the steps ladder, only gradients decents power of calculation and optimizers algorithms approches of next critical points for the functions and result from back-propagatyions multiple time to decide it is positive or negative with or without learning rules or scores.
+
+## For comparison with codes ## 
+
+#### One axis problem ####
+
+The player tries to move the player's cursor to balance with increasing steps value until it reaches one side of the game's stage ( Mario Games ) by the equation ```step - player_x_position``` and the player jumps with the equation ```player_x_position - player_y_position``` .  It can be applied to Ping-Pong games by limiting the maximum of the step values or ```step % 50``` 
+
+```
+for i in range( game_step ):
+    step = step + 1
+    
+    coeff_01 = step 
+    coeff_02 = step - player_x_position
+    coeff_03 = player_x_position - player_y_position
+```
 
 ## Constants ##
 
