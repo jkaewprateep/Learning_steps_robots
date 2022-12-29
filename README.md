@@ -23,7 +23,7 @@ for i in range( game_step ):
 
 ### Multiple axis problem ####
 
-It required significants for AI to learning additional task from the current task and its continuity, see the output there are possibilities to learn additional tasks by its significant and continue do it with the ratios until robots learn all possible rules. 
+It required significants for AI to learning additional task from the current task and its continuity, see the output there are possibilities to learn additional tasks by its significant and continue do it with the ratios until robots learn all possible rules. The AI auto-play learns that ladder, fireball, and coins are conditions it which it moves.
 
 ``` [0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3, 0, 0, 2, 2, 4, 1, 1, 1, 3, 3] ```
 
@@ -31,11 +31,17 @@ It required significants for AI to learning additional task from the current tas
 input = [ ]	
 for i in range( 30 ) :
 
-	n_steps = abs( steps % ( 5 ) - steps % ( 2 ) )
+    n_steps = abs( steps % ( 5 ) - steps % ( 2 ) )
 
-	series_1 = n_steps
-	input.append( series_1 )
-	steps = steps + 1
+    series_1 = n_steps
+    input.append( series_1 )
+    steps = steps + 1
+	
+    contrl = gamescores + len( list_ladder ) + len( coinGroup ) + len( fireballGroup )
+    contr2 = player[0][0] - series_1
+    contr3 = 1
+    contr4 = 1
+    contr5 = 1
 ```
 
 ## Constants ##
